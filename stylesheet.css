@@ -1,0 +1,582 @@
+/*** Allgemein ***/
+* {
+    margin:0;
+   padding:0;
+ }
+ html {
+        scroll-behavior: smooth;
+        font-size: 100%;
+ }
+ h2, h3, p, a, li {
+        font-family: 'Dosis', sans-serif;
+        padding: 10px;
+ }
+ p {
+    font-size: 16px;
+ }
+ h1 {
+     text-align: center;
+     font-family: "Dosis", sans-serif;
+     color: black;
+     padding: 100px 40px 80px 40px;
+ }
+ a:link {
+     text-decoration: none;
+ }
+ a:after {
+     text-decoration: none;
+ }
+ .li {
+     list-style-type: none;
+ }
+/* Nav */ 
+    .nav {
+        display: none;
+    }
+    .hamburgerIcon {
+        display: flex;
+        position: fixed;
+        top: 12px;
+        right: 7px;
+        color: black;
+        user-select: none;
+        z-index: 5;
+    }
+    .hamburgerIcon a:hover {
+        color: black;
+
+    }
+    .navGeoeffnet {
+       display: block;
+       width: 100%;
+       height: 100%;
+       position: fixed;
+       z-index: 4;
+       padding-top: 2.8em;
+       background-color: rgba(194, 192, 192, 0.863);
+       animation:schieber .7s;
+    }
+    @keyframes schieber{
+        from{transform:translate(100%,0px)}
+        to  {transform:translate(0%,0px)}
+    }
+    .navGeoeffnet li {
+       display: block;
+       height: 100%;
+       text-align: center;
+       font-weight: 900;
+       padding: 10px;
+   }
+   .navGeoeffnet li a {
+       text-decoration: none;
+       color: white;
+       transition: font-size .4s;
+       font-size: 2em;
+   }
+   .navGeoeffnet li a:hover {
+    width: 100%;
+    transition: font-size .4s;
+    font-size: 3em;
+   }
+
+
+/* Start */
+@media (min-width: 599px) {
+    .start {
+        /*parallax*/
+        background-image: url(pics/IMG_2160neu.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom left;
+        height: 100vh;
+        margin: none;    
+        min-height: 500px; 
+      }
+    }
+    @media (max-width: 600px) {
+    .start{
+        background-image: url(pics/IMG_2166neu.jpg);
+        background-repeat:repeat-x;
+        background-size: cover;
+        margin: none; 
+        height:100vh;
+        }
+    }
+      .start h1 {
+        font-size: 3em;
+        color: white;
+        padding: 0;
+    }
+    .start h2 {
+        text-align: center;
+        letter-spacing: 1px;
+        color: white;
+        font-size: 1em;
+    }
+    @media (min-width: 600px) {
+    .kreis {
+        background:rgba(118, 151, 168, 0.808)
+        ;
+        border-radius: 50%;
+        text-align: center;
+        height: 470px;
+        width: 470px;
+        position: absolute;
+        top: 8em;
+        right: 10px;
+        padding: 10px;
+        margin-top: -30px;
+        margin-right: -40px;
+        margin-bottom: 0px;
+        display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+}
+       .icons {
+           background-color: rgba(194, 183, 166, 0.842);
+           width: 100%;
+           position: absolute;
+           bottom: 0;
+           padding-top: 1.3em;
+           padding-right: 1.5em;
+           padding-bottom: 1.3em;
+           text-align: center;
+       }
+       .icons div {
+          font-family: 'Dosis', sans-serif;
+          font-size: 1em;
+          display: inline-block;
+          padding: 5px;
+       }
+       .icons i {
+           padding: 8px;
+           font-size: 1em;
+       }
+
+/*Erklärtext*/
+@media (min-width: 799px) {
+.erklaertext {
+    color: grey;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.507);
+    font-size: large;
+    padding: 20px;
+    padding-left: 100px;
+    font-family: "dosis", sans-serif;
+    padding-top: 12vh;
+}}
+@media (max-width: 799px) {
+.erklaertext {
+    color: grey;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.507);
+    font-size: large;
+    padding: 20px;
+    font-family: "dosis", sans-serif;
+    padding-top: 12vh;
+}}
+
+
+/*Drehwurm*/
+@media (min-width: 799px) {
+.drehwurm {
+    position: fixed;
+    z-index:5;
+}
+}
+@media (max-width: 799px) {
+    .drehwurm {
+        display: none;
+    }}
+    #warped {
+        position: fixed;
+    
+    }
+    
+    #warped {position: relative; display: block; width:211px; height:208px;}
+     
+    #warped>span[class^=w]:nth-of-type(n+0){display:block; position:absolute;
+    -moz-transform-origin:50% 100%; -webkit-transform-origin:50% 100%; -o-transform-origin:50%
+    100%; -ms-transform-origin:50% 100%; transform-origin:50% 100%; }
+
+    #warped span{font-family:'Dosis';font-size:38px;font-weight:300;font-style:normal;
+    line-height:0.65; white-space:pre; overflow:visible; padding:0px;}
+
+    #warped .w0 {-moz-transform: rotate(-1.26rad);-webkit-transform: rotate(-1.26rad);-o-transform:
+    rotate(-1.26rad);-ms-transform: rotate(-1.26rad); transform: rotate(-1.26rad);
+    width: 18px; height: 25px; left: 27.61px; top: 58px;}
+
+    #warped .w1 {-moz-transform: rotate(-1.02rad);-webkit-transform: rotate(-1.02rad);-o-transform:
+    rotate(-1.02rad);-ms-transform: rotate(-1.02rad); transform: rotate(-1.02rad);
+    width: 8px; height: 25px; left: 40.12px; top: 41.69px;}
+
+    #warped .w2 {-moz-transform: rotate(-0.76rad);-webkit-transform: rotate(-0.76rad);-o-transform:
+    rotate(-0.76rad);-ms-transform: rotate(-0.76rad); transform: rotate(-0.76rad);
+    width: 22px; height: 25px; left: 45.73px; top: 26.25px;}
+
+    #warped .w3 {-moz-transform: rotate(-0.41rad);-webkit-transform: rotate(-0.41rad);-o-transform:
+    rotate(-0.41rad);-ms-transform: rotate(-0.41rad); transform: rotate(-0.41rad);
+    width: 20px; height: 25px; left: 68.38px; top: 12.09px;}
+
+    #warped .w4 {-moz-transform: rotate(-0.16rad);-webkit-transform: rotate(-0.16rad);-o-transform:
+    rotate(-0.16rad);-ms-transform: rotate(-0.16rad); transform: rotate(-0.16rad);
+    width: 8px; height: 25px; left: 92.6px; top: 6.87px;}
+
+    #warped .w5 {-moz-transform: rotate(0.01rad);-webkit-transform: rotate(0.01rad);-o-transform:
+    rotate(0.01rad);-ms-transform: rotate(0.01rad); transform: rotate(0.01rad);
+    width: 7px; height: 25px; left: 105.55px; top: 6px;}
+
+    #warped .w6 {-moz-transform: rotate(0.18rad);-webkit-transform: rotate(0.18rad);-o-transform:
+    rotate(0.18rad);-ms-transform: rotate(0.18rad); transform: rotate(0.18rad);
+    width: 8px; height: 25px; left: 117.48px; top: 7.22px;}
+
+    #warped .w7 {-moz-transform: rotate(0.44rad);-webkit-transform: rotate(0.44rad);-o-transform:
+    rotate(0.44rad);-ms-transform: rotate(0.44rad); transform: rotate(0.44rad);
+    width: 22px; height: 25px; left: 129.45px; top: 13.38px;}
+
+    #warped .w8 {-moz-transform: rotate(0.8rad);-webkit-transform: rotate(0.8rad);-o-transform:
+    rotate(0.8rad);-ms-transform: rotate(0.8rad); transform: rotate(0.8rad);
+    width: 21px; height: 25px; left: 151.34px; top: 28.78px;}
+
+    #warped .w9 {-moz-transform: rotate(1.14rad);-webkit-transform: rotate(1.14rad);-o-transform:
+    rotate(1.14rad);-ms-transform: rotate(1.14rad); transform: rotate(1.14rad);
+    width: 21px; height: 25px; left: 165.87px; top: 50.18px;}
+
+    #warped .w10 {-moz-transform: rotate(1.48rad);-webkit-transform: rotate(1.48rad);-o-transform:
+    rotate(1.48rad);-ms-transform: rotate(1.48rad); transform: rotate(1.48rad);
+    width: 19px; height: 25px; left: 173.19px; top: 74.25px;}
+
+    #warped .w11 {-moz-transform: rotate(1.8rad);-webkit-transform: rotate(1.8rad);-o-transform:
+    rotate(1.8rad);-ms-transform: rotate(1.8rad); transform: rotate(1.8rad);
+    width: 19px; height: 25px; left: 171.52px; top: 98.09px;}
+
+    #warped .w12 {-moz-transform: rotate(2.04rad);-webkit-transform: rotate(2.04rad);-o-transform:
+    rotate(2.04rad);-ms-transform: rotate(2.04rad); transform: rotate(2.04rad);
+    width: 8px; height: 25px; left: 170.63px; top: 115.41px;}
+
+    #warped .w13 {-moz-transform: rotate(2.21rad);-webkit-transform: rotate(2.21rad);-o-transform:
+    rotate(2.21rad);-ms-transform: rotate(2.21rad); transform: rotate(2.21rad);
+    width: 7px; height: 25px; left: 164.5px; top: 125.98px;}
+
+    #warped .w14 {-moz-transform: rotate(2.38rad);-webkit-transform: rotate(2.38rad);-o-transform:
+    rotate(2.38rad);-ms-transform: rotate(2.38rad); transform: rotate(2.38rad);
+    width: 8px; height: 25px; left: 155.71px; top: 135.32px;}
+
+    #warped .w15 {-moz-transform: rotate(2.62rad);-webkit-transform: rotate(2.62rad);-o-transform:
+    rotate(2.62rad);-ms-transform: rotate(2.62rad); transform: rotate(2.62rad);
+    width: 18px; height: 25px; left: 136.31px; top: 146.05px;}
+
+    #warped .w16 {-moz-transform: rotate(2.94rad);-webkit-transform: rotate(2.94rad);-o-transform:
+    rotate(2.94rad);-ms-transform: rotate(2.94rad); transform: rotate(2.94rad);
+    width: 21px; height: 25px; left: 111.96px; top: 154.59px;}
+
+    #warped .w17 {-moz-transform: rotate(3.28rad);-webkit-transform: rotate(3.28rad);-o-transform:
+    rotate(3.28rad);-ms-transform: rotate(3.28rad); transform: rotate(3.28rad);
+    width: 20px; height: 25px; left: 87.09px; top: 155.2px;}
+
+    #warped .w18 {-moz-transform: rotate(3.65rad);-webkit-transform: rotate(3.65rad);-o-transform:
+    rotate(3.65rad);-ms-transform: rotate(3.65rad); transform: rotate(3.65rad);
+    width: 25px; height: 25px; left: 58.72px; top: 146.36px;}
+
+    #warped .w19 {-moz-transform: rotate(3.94rad);-webkit-transform: rotate(3.94rad);-o-transform:
+    rotate(3.94rad);-ms-transform: rotate(3.94rad); transform: rotate(3.94rad);
+    width: 8px; height: 25px; left: 50.23px; top: 133.29px;}
+
+    #warped .w20 {-moz-transform: rotate(4.2rad);-webkit-transform: rotate(4.2rad);-o-transform:
+    rotate(4.2rad);-ms-transform: rotate(4.2rad); transform: rotate(4.2rad);
+    width: 22px; height: 25px; left: 31.35px; top: 117.28px;}
+
+    #warped .w21 {-moz-transform: rotate(4.47rad);-webkit-transform: rotate(4.47rad);-o-transform:
+    rotate(4.47rad);-ms-transform: rotate(4.47rad); transform: rotate(4.47rad);
+    width: 8px; height: 25px; left: 31.11px; top: 98.7px;}
+
+    #warped .w22 {-moz-transform: rotate(4.64rad);-webkit-transform: rotate(4.64rad);-o-transform:
+    rotate(4.64rad);-ms-transform: rotate(4.64rad); transform: rotate(4.64rad);
+    width: 7px; height: 25px; left: 29.69px; top: 86.36px;}
+
+                        
+/* Galerie */
+.carousel-item > img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+/* Ausstattung */
+.ausstattung {
+    font-family: Dosis, sans serif;
+    display:block;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+ }
+ @media (min-width: 799px) {
+ .zIndex {
+    padding-left: 220px;
+ }
+}
+ .ausstattungskasten {
+     display: inline-block;
+     z-index: 1500;
+     width: 300px;
+     margin: auto;
+ }
+ .ausstattungsicon {
+     padding: 1em;
+     margin: auto;
+     font-size: 2em;
+     font-weight: 100;
+     display: inline;
+ }
+ .ausstattungstexte {
+     float: left;
+     padding: 1.5em;
+     padding-bottom: 3em;
+     margin: auto;
+     font-family: Dosis, sans serif;
+ }
+ .ausstattungskasten h3 {
+     color:rgb(76, 112, 121);
+     font-family: 'Licorice', cursive;
+     font-size: 2.6em;
+     display: inline-block;
+ }
+
+ /* Preise */
+/* Accordion */
+@media (min-width: 799px) {
+.accordion {
+    padding-right: 20px;
+    padding-left: 120px;
+    padding-bottom: 80px;
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+.accordion > p {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding-left: 120px;
+    padding-right: 20px;
+    margin: auto;
+}
+}
+@media (max-width: 800px) {
+.accordion {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.accordion > p {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding: 20px;
+    margin: auto;
+}
+}
+@media (max-width: 600px) {
+.accordion {
+    font-family: "Dosis", sans-serif;
+    text-align: center;
+}
+.accordion > p {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    padding: 8px;
+    margin: auto;
+}
+}
+.accordion-body > div > ul > li {
+    list-style-type:none;
+}
+@media (min-width: 600px) {
+#preis {
+    background-image: url(pics/IMG_2251neu.jpg);
+    padding-top: 80vh;
+    color: white;
+    text-shadow:0 0 4px rgb(102, 100, 100);
+    /*parallax*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    margin: none;  
+}
+}
+@media (max-width: 599px) {
+    #preis {
+        background-image: url(pics/IMG_1817klein.jpg);
+        padding-top: 80vh;
+        color: white;
+        text-shadow:0 0 4px rgb(102, 100, 100);
+        height: 100vh;
+        background-position: center right;
+        margin: none;  
+        background-repeat: no-repeat;
+
+    }
+}
+.accordion-button {
+    color: rgb(76, 112, 121);
+}
+
+.accordion-button:not(.collapsed) {
+    background:rgba(231, 230, 230, 0.692);
+    color: rgb(76, 112, 121);
+}
+
+
+/*Kalender*/
+#kalender {
+    color: white;
+    text-shadow:0 0 4px rgb(102, 100, 100);
+}
+.calendar h3{
+    color: white;
+    text-shadow:0 0 4px rgb(102, 100, 100);
+}
+@media (max-width: 798px) {
+.calendar {
+    text-align: center;
+    background-image: url(pics/IMG_klein_2244.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0 0 1px;
+    }
+}
+
+@media (min-width: 799px) {
+    .calendar {
+        padding-left: 240px;
+        padding-right: 70px;
+        padding-bottom: 80px;
+        text-align: center;
+    background-image: url(pics//IMG_2244.jpeg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0 0 1px;
+    }
+}
+
+/*Umgebung*/
+@media (min-width: 800px) {
+.umgebung {
+    padding: 20px;
+    padding-left: 240px;
+    font-size: large;
+    }
+}
+@media (max-width: 799px) {
+.umgebung {
+    padding: 20px;
+    font-size: large;
+    }
+}
+
+/*Kontakt*/
+.kontakt1 p {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.kontakt2 a:link {
+     text-decoration: none;
+     display: inline-block;
+
+ }
+.kontakt2 a:hover {
+     text-decoration: none;
+     border-bottom: 2px solid #212121;
+ }
+ .kontakt2 a:after {
+     text-decoration: none;
+     color: white;
+ }
+ @media (min-width: 600px) {
+ .kontakt2 {
+     background-image: url(pics/kontakt.jpg);
+     background-attachment: fixed;
+     width: 100vw;
+     background-repeat: no-repeat;
+     background-size: cover;
+     margin: none;    
+     background-position:center;
+     height: 23em;
+ }
+}
+@media (max-width: 599px) {
+    .kontakt2 {
+        background-image: url(pics/kontaktklein.jpg);
+        width: 100vw;
+        margin: none;    
+        height: 23em;
+        background-repeat: no-repeat;
+     background-size: cover;
+     margin: none;    
+     background-position:center;
+    }
+   }
+.kontakt2 > a {
+    color: whitesmoke;
+    text-shadow: o o 1px;
+    font-family: Dosis, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 20vh;
+    margin-right: 10vw;
+    float: right;
+}
+/* Impressum */
+@media (min-width: 799px) {
+    .impressum {
+        padding-left: 240px;
+        padding-right: 70px;
+        padding-bottom: 80px;
+    }
+}
+ /* Footer */
+ .footer {
+     display: block;
+     width: 100vw;
+     height: 66px;
+     background-color: rgb(235, 233, 233);
+ }
+ .footer > table {
+     width: 100%;
+     display: table-row;
+ }
+ .footer1 {
+     padding-top: 25px;
+     padding-left: 25px;
+ }
+ a.footer2:link {
+     text-decoration: none;
+     padding-bottom: 6px;
+     color:rgb(39, 11, 33);
+ }
+ a.footer2:visited {
+    text-decoration: none;
+    color:rgb(39, 11, 33);
+} 
+ a.footer2:hover {
+     text-decoration: none;
+     border-bottom: solid 1px #484747;
+     color:rgb(39, 11, 33);
+ }
+  
+ .herz {
+     padding: 2em;
+     text-align: center;
+ }
+
+ 
