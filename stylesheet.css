@@ -96,7 +96,7 @@
     }
     @media (max-width: 600px) {
     .start{
-        background-image: url(pics/IMG_2241neu.jpg);
+        background-image: url(pics/IMG_2234neu.jpg);
         background-repeat:repeat-x;
         background-size: cover;
         background-position: top;
@@ -125,7 +125,7 @@
         width: 470px;
         position: absolute;
         top: 12em;
-        left: 50%;
+        left: 51%;
         padding: 10px;
         margin-top: -30px;
         margin-right: -40px;
