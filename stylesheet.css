@@ -96,9 +96,10 @@
     }
     @media (max-width: 600px) {
     .start{
-        background-image: url(pics/IMG_2166neu.jpg);
+        background-image: url(pics/IMG_2241neu.jpg);
         background-repeat:repeat-x;
         background-size: cover;
+        background-position: top;
         margin: none; 
         height:100vh;
         }
@@ -320,6 +321,11 @@
     padding-left: 220px;
  }
 }
+@media (max-width: 798px) {
+    .ausstattungkasten {
+        text-align: center;
+    }
+   }
  .ausstattungskasten {
      display: inline-block;
      z-index: 1500;
@@ -334,10 +340,11 @@
      display: inline;
  }
  .ausstattungstexte {
-     float: left;
+     
      padding: 1.5em;
      padding-bottom: 3em;
      margin: auto;
+     float: left;
      font-family: Dosis, sans serif;
  }
  .ausstattungskasten h3 {
