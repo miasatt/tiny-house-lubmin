@@ -440,26 +440,24 @@
 
 /*Kalender*/
 #kalender {
-    color: white;
-    text-shadow:0 0 4px rgb(102, 100, 100);
+    color: black;
 }
 .calendar h3{
-    color: white;
-    text-shadow:0 0 4px rgb(102, 100, 100);
+    color:black;
 }
-@media (max-width: 798px) {
+@media (max-width: 899px) {
 .calendar {
     text-align: center;
-    background-image: url(pics/IMG_klein_2244.jpeg);
+    /* background-image: url(pics/IMG_2244.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center ; */
     text-shadow: 0 0 1px;
     }
 }
 
-@media (min-width: 799px) {
+@media (min-width: 898px) {
     .calendar {
         padding-left: 240px;
         padding-right: 70px;
