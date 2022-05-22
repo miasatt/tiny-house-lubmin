@@ -96,10 +96,10 @@
     }
     @media (max-width: 600px) {
     .start{
-        background-image: url(pics/IMG_2234neu.jpg);
+        background-image: url(pics/IMG_2237neu.jpg);
         background-repeat:repeat-x;
         background-size: cover;
-        background-position: top;
+        background-position:bottom;
         margin: none; 
         height:100vh;
         }
