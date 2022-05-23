@@ -81,44 +81,58 @@
 
 
 /* Start */
-@media (min-width: 599px) {
-    .start {
-        /*parallax*/
-        background-image: url(pics/IMG_2160neu.jpg);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: bottom left;
-        height: 100vh;
-        margin: none;    
-        min-height: 500px; 
-      }
+.start h1 {
+    font-size: 3em;
+    color: white;
+    padding: 0;
+}
+.start h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 1em;
+}
+    /* Handy hochkant */
+    @media (max-width: 768px)  and (orientation: portrait) {
+        .start{
+            background-image: url(pics/IMG_2237neu.jpg);
+            background-repeat:repeat-x;
+            background-size: cover;
+            background-position:bottom;
+            margin: none; 
+            height:100vh;
+            }
     }
-    @media (max-width: 600px) {
-    .start{
-        background-image: url(pics/IMG_2237neu.jpg);
-        background-repeat:repeat-x;
-        background-size: cover;
-        background-position:bottom;
-        margin: none; 
-        height:100vh;
+    /* Handy quer */
+    @media (min-width: 500px)   and (orientation: landscape) {
+        .start{
+            background-image: url(pics/IMG_2160neu.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+            margin: none; 
+            height:100vh;
+            }
+    }
+    /* Bildschirm */
+    @media (min-width: 769px) {
+        .start {
+            /*parallax*/
+            background-image: url(pics/IMG_2160neu.jpg);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom left;
+            height: 100vh;
+            margin: none;    
+            min-height: 500px; 
+          }
         }
-    }
-      .start h1 {
-        font-size: 3em;
-        color: white;
-        padding: 0;
-    }
-    .start h2 {
-        text-align: center;
-        letter-spacing: 1px;
-        color: white;
-        font-size: 1em;
-    }
-    @media (min-width: 600px) {
+    
+    @media (min-width: 769px) and (orientation: landscape) {
     .kreis {
-        background:rgba(118, 151, 168, 0.808)
-        ;
+        background:rgba(118, 151, 168, 0.808);
         border-radius: 50%;
         text-align: center;
         height: 470px;
@@ -131,8 +145,8 @@
         margin-right: -40px;
         margin-bottom: 0px;
         display: flex;
-  align-items: center;
-  justify-content: center;
+        align-items: center;
+        justify-content: center;
     }
 }
        .icons {
@@ -157,7 +171,7 @@
        }
 
 /*Erklärtext*/
-@media (min-width: 799px) {
+@media (min-width: 769px) {
 .erklaertext {
     color: grey;
     text-align: center;
@@ -170,7 +184,7 @@
     font-family: "dosis", sans-serif;
     padding-top: 12vh;
 }}
-@media (max-width: 799px) {
+@media (max-width: 768px) {
 .erklaertext {
     color: grey;
     text-align: center;
@@ -511,7 +525,6 @@
  .kontakt2 {
      background-image: url(pics/kontakt.jpg);
      background-attachment: fixed;
-     width: 100vw;
      background-repeat: no-repeat;
      background-size: cover;
      margin: none;    
@@ -522,7 +535,6 @@
 @media (max-width: 599px) {
     .kontakt2 {
         background-image: url(pics/kontaktklein.jpg);
-        width: 100vw;
         margin: none;    
         height: 23em;
         background-repeat: no-repeat;
@@ -552,7 +564,6 @@
  /* Footer */
  .footer {
      display: block;
-     width: 100vw;
      height: 66px;
      background-color: rgb(235, 233, 233);
  }
